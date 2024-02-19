@@ -1,6 +1,6 @@
 {
   "name": "@mbs-dev/react-image-compressor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react image compressor",
   "main": "dist/index.js",
   "types": "types/index.d.ts",

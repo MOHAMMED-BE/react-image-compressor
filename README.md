@@ -1,4 +1,4 @@
-# @mohammed-be/react-image-compressor
+# @mbs-dev/react-image-compressor
 
 A package for compressing images efficiently and effectively in React applications.
 Keep your image quality, save your storage and make your website faster.
@@ -7,7 +7,7 @@ Keep your image quality, save your storage and make your website faster.
 To add this package to your project, execute the following command in your terminal:
 
 ```bash
-npm i @mohammed-be/react-image-compressor
+npm i @mbs-dev/react-image-compressor
 
 ```
 ## Usage
@@ -15,7 +15,7 @@ npm i @mohammed-be/react-image-compressor
 First, import the necessary functions from the package in your React component:
 
 ```javascript
-import {compressAndAppendImage,ImageCompressor} from '@mohammed-be/react-image-compressor';
+import {compressAndAppendImage,ImageCompressor} from '@mbs-dev/react-image-compressor';
 
 ```
  ## Method -1 | using compressAndAppendImage function            
