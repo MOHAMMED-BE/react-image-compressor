@@ -1,0 +1,32 @@
+{
+  "name": "@mbs-dev/react-image-compressor",
+  "version": "1.0.0",
+  "description": "react image compressor",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MOHAMMED-BE/react-image-compressor.git"
+  },
+  "keywords": [
+    "react",
+    "image",
+    "compressor"
+  ],
+  "author": "MOHAMMED BEN-SEGHIR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MOHAMMED-BE/react-image-compressor/issues"
+  },
+  "homepage": "https://github.com/MOHAMMED-BE/react-image-compressor#readme",
+  "dependencies": {
+    "compressorjs": "^1.2.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

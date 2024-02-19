@@ -1,0 +1,1 @@
+declare module '@mohammed-be/react-image-compressor';
