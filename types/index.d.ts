@@ -1,1 +1,1 @@
-declare module '@mohammed-be/react-image-compressor';
+declare module '@mbs-dev/react-image-compressor';
