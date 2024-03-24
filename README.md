@@ -15,7 +15,7 @@ npm i @mbs-dev/react-image-compressor
 First, import the necessary functions from the package in your React component:
 
 ```javascript
-import {compressAndAppendImage,ImageCompressor} from '@mbs-dev/react-image-compressor';
+import {compressAndAppendImage, imageCompressor} from '@mbs-dev/react-image-compressor';
 
 ```
  ## Method -1 | using compressAndAppendImage function            
@@ -34,7 +34,7 @@ await compressAndAppendImage(formik.values.image as unknown as File, formData,im
 await compressAndAppendImage(imageFile, formData,imagefileFieldName,quality)
 
 ```
- ## Method -2 | using ImageCompressor function                   
+ ## Method -2 | using imageCompressor function                   
 
 ```javascript
 
@@ -44,14 +44,14 @@ const formData = new FormData();
 const quality = 0.2
 
 //-- Using Formik
-const compressedImage = await ImageCompressor(formik.values.image, quality);
+const compressedImage = await imageCompressor(formik.values.image, quality);
 const fieldName = formik.values.image as unknown as File;
 const imagefileFieldName = fieldName.name.replace(' ', '-').slice(0, fieldName.name.lastIndexOf('.')) + '.webp';
 formData.append('photo', compressedImage, imagefileFieldName);
 
 
 //-- Using useState
-const compressedImage = await ImageCompressor(imageFile, quality);
+const compressedImage = await imageCompressor(imageFile, quality);
 const fieldName = imageFile as File;
 const imagefileFieldName = fieldName.name.replace(' ', '-').slice(0, fieldName.name.lastIndexOf('.')) + '.webp';
 formData.append('photo', compressedImage, imagefileFieldName);
