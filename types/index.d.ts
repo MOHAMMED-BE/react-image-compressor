@@ -1,1 +1,1 @@
-declare module '@mbs-dev/react-image-compressor';
+export { imageCompressor, compressAndAppendImage } from './Compressor';
