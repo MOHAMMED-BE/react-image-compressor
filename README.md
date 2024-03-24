@@ -44,17 +44,17 @@ const formData = new FormData();
 const quality = 0.2
 
 //-- Using Formik
-const compressedImage = await imageCompressor(formik.values.image, quality);
+const compressedImage = await imageCompressor(formik.values.image as unknown as File, quality);
 const fieldName = formik.values.image as unknown as File;
 const imagefileFieldName = fieldName.name.replace(' ', '-').slice(0, fieldName.name.lastIndexOf('.')) + '.webp';
-formData.append('photo', compressedImage, imagefileFieldName);
+formData.append('photo', compressedImage as File, imagefileFieldName);
 
 
 //-- Using useState
 const compressedImage = await imageCompressor(imageFile, quality);
 const fieldName = imageFile as File;
 const imagefileFieldName = fieldName.name.replace(' ', '-').slice(0, fieldName.name.lastIndexOf('.')) + '.webp';
-formData.append('photo', compressedImage, imagefileFieldName);
+formData.append('photo', compressedImage as File, imagefileFieldName);
 
 ```
  ## Notes
